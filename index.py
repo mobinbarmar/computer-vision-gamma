@@ -6,7 +6,7 @@ gammas = [0.1, 0.2, 0.8, 1.5, 3, 5]
 
 cv2.imshow('Image', img)
 
-cv2.waitKey(1)
+cv2.waitKey(0)
 
 
 def adjust_gamma(img, gamma = 1.0):
@@ -19,4 +19,4 @@ def adjust_gamma(img, gamma = 1.0):
 for gamma in gammas:
     img = adjust_gamma(img, gamma)
     cv2.imshow(f'Image with gamma {gamma}', img)
-    cv2.waitKey(1)
+    cv2.waitKey(0)
