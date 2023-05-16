@@ -10,7 +10,7 @@ cv2.waitKey(0)
 
 
 def adjust_gamma(img, gamma = 1.0):
-    invGamma = 1.0 / gamma
+    # invGamma = 1.0 / gamma
     table = np.array([((i / 255.0) ** gamma) * 255
                      for i in np.arange(0, 256)]).astype('uint8')
     return cv2.LUT(img, table)
